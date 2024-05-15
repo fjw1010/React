@@ -8,7 +8,7 @@ const person = {
   job: "개발자",
 };
 const { name, age } = person;
-console.log(name, age);
+console.log(`${name}님의 나이는 ${age}살 입니다.`);
 /**
  * 2) 다음 자바스크립트 객체에서 title과 year를 디스트럭처링을
  * 사용하여 추출하고 출력하는 코드를 작성하세요.
@@ -25,7 +25,7 @@ const {
   title,
   release: { year },
 } = movie;
-console.log(title, year);
+console.log(`영화의 제목은 ${title}입니다. 개봉 년도는 ${year}년도 입니다.`);
 
 /**
  * 3) 다음 자바스크립트 배열에서 첫 번째와 세 번째 요소를 디스트럭처링을 사용하여
@@ -40,14 +40,15 @@ console.log(third);
  * 4) 호텔의 예약 확인 시스템의 함수라고 가정합니다.
  * 아래 결과와 같이 출력되도록 함수를 완성해 보세요.
  */
-function confirmReservation(user) {
-  const { name, roomType, date: firstDate } = user;
-  return `${name} 고객님의 ${roomType}룸 입실날짜는 ${firstDate}일 입니다.`;
-}
 const userInfo = {
   name: "soyoung",
   roomType: "Deluxe",
   date: "2024-05-30",
 };
+function confirmReservation(user) {
+  const { name, roomType, date: firstDate } = user;
+  return `${name} 고객님의 ${roomType}룸 입실날짜는 ${firstDate}일 입니다.`;
+}
+
 const result = confirmReservation(userInfo);
 console.log(result);
