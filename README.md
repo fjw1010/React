@@ -1,4 +1,4 @@
-<div text-area:center>
+<div>
   <h1>React</h1>
   <h2>목차</h2>
   <ul>
