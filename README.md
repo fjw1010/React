@@ -1,7 +1,7 @@
 <div>
   <h1>React</h1>
   <h2>목차</h2>
-  ---
+  - - -
   <h3>기초주차</h3>
   <ul>
     <li>let, const, var</li>
