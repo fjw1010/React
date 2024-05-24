@@ -24,3 +24,13 @@ function App() {
 }
 
 export default App;
+/**
+ * default는 1번만 사용할 수 있음
+ * 만약 import를 또 사용한다면
+ * import React from 'react';
+ * fuction () => {}
+ * 
+ * 연결된 main.jsx에
+ * import {} from './'
+ * 이렇게 넣어야 함
+ */
