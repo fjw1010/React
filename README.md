@@ -1,5 +1,6 @@
 <div>
-  https://raw.githubusercontent.com/fjw1010/React/170c664f8f83fbfaf9eb12525cf57ba40c65cdbb/react-app/public/logo192.png<h1>React</h1>
+  <img src='https://raw.githubusercontent.com/fjw1010/React/170c664f8f83fbfaf9eb12525cf57ba40c65cdbb/react-app/public/logo192.png' />
+  <h1>React</h1>
   <h2>목차</h2>
   <h3>입문 1주차</h3>
   <ul>
