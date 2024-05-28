@@ -1,21 +1,22 @@
-import React from "react";
+import React from "react"
 
-function App() {
-  return <GrandFather />;
-}
-function GrandFather() {
-  const name = "르탄"
-  return <Monter name={name} />;
-}
-
-function Monter(props) {
-  const name = props.name
-  return <Child name={name}/>;
-}
-
-function Child(props) {
-  const name = props.name
-  return <div>{name}</div>
+const App = () => {
+  const title = "제목입니다."
+  return (
+    <div>
+      <h1>추출테스트</h1>
+      <Todo title={title} />
+    </div>
+  )
 }
 
 export default App;
+
+const Todo = ({ title = "미제출" }) => {
+  return (
+    <div>
+      <h3>{title}</h3>
+      투두입니다.
+    </div>
+  )
+}
