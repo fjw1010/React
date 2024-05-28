@@ -13,10 +13,8 @@
     <li>모듈</li>
     <li>promise, async, await</li>
   </ul>
-<<<<<<< HEAD
   <h3>2주차</h3>
   <ul>
-=======
   <h3>입문 2주차</h3>
   <ul>
     <li>React 소개</li>
@@ -33,6 +31,5 @@
     <li>카운터 앱 실습</li>
     <li>스타일링 및 refactoring(1)</li>
     <li>refactoring(2)</li>
->>>>>>> faffb9f68f7b78d1ffc7aef9d676b8196eccacc9
   </ul>
 </div>
