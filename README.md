@@ -14,7 +14,6 @@
     <li>promise, async, await</li>
   </ul>
   <h3>2주차</h3>
-  <ul>
   <h3>입문 2주차</h3>
   <ul>
     <li>React 소개</li>
