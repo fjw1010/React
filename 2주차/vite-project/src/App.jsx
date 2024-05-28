@@ -1,36 +1,37 @@
-import React from 'react';
-function App() {
-  
-	// <---- 자바스크립트 영역 ---->
-  const handlerClick = () => {
-    alert('클릭!')
-  }
+import React from "react";
 
+function App() {
   return (
-  /* <---- HTML/JSX 영역  ---->*/
-    <div
-      style={{
-        height: '100vh',
-        display: ' flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <p>이것은 내가 만든 App컴포넌트 입니다.</p>
-      <button onClick={handlerClick}>클릭!</button>
+    <div>
+      <h1>부모-자식 관계 테스트</h1>
+      <GrandFather />
     </div>
-  );
+  )
+}
+function GrandFather() {
+  return(
+    <div>
+      <p>나는 할아버지 입니다.</p>
+      <Monter />
+    </div>
+  )
+}
+
+function Monter() {
+  return (
+    <div>
+      <p>나는 엄마입니다.</p>
+      <Child />
+    </div>
+  )
+}
+
+function Child() {
+  return (
+    <div>
+      <p>나는 자식입니다.</p>
+    </div>
+  )
 }
 
 export default App;
-/**
- * default는 1번만 사용할 수 있음
- * 만약 import를 또 사용한다면
- * import React from 'react';
- * fuction () => {}
- * 
- * 연결된 main.jsx에
- * import {} from './'
- * 이렇게 넣어야 함
- */
